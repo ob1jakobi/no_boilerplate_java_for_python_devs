@@ -13,7 +13,7 @@ public class PrimitiveTypesExamples {
             b = (byte) i;
             System.out.printf("%-5d%-7d", i, b);
 
-            s = Integer.toBinaryString(i);
+            s = Integer.toBinaryString(Byte.toUnsignedInt(b));
 
             start = Math.max(0, s.length() - n);
             stop = Math.min(n, s.length());
